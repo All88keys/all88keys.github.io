@@ -9,7 +9,7 @@
     <iframe id='bg' src='https://all88keys.github.io/stars/'></iframe>
     <div id='background'>
       <h1>
-        My Webasite <button>Stars</button><button>IE Error</button>
+        My Webasite <button onclick='bg.src = stars'>Stars</button><button onclick='bg.src = stars'>IE Error</button>
       </h1>
     </div>
   </body>
@@ -17,6 +17,5 @@
     var stars = 'https://all88keys.github.io/stars/';
     var ie = 'https://all88keys.github.io/ie-error/';
     var bg = document.getElementById('bg');
-    bg.src =ie;
   </script>
 </html>
