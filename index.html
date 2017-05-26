@@ -4,15 +4,7 @@
     <title>Chris Vassallo</title>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
-    <script>
-    var stars = 'https://all88keys.github.io/stars/';
-    var ie = 'https://all88keys.github.io/ie-error/';
-    var bg = document.getElementById('bg');
-    bg.src = function(){
-      if(Math.Random()<5){ return ie;}
-      else{ return stars;}
-    }
-    
+    <script>    
     function toggleTransparency(){
       var opacity = document.getElementById('background').style.opacity;
       if(opacity =='1') {opacity ='.3;'}
@@ -28,4 +20,13 @@
       </h1>
     </div>
   </body>
+  <script>
+    var stars = 'https://all88keys.github.io/stars/';
+    var ie = 'https://all88keys.github.io/ie-error/';
+    var bg = document.getElementById('bg');
+    bg.src = function(){
+      if(Math.Random()<5){ return ie;}
+      else{ return stars;}
+    }
+  </script>
 </html>
