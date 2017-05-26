@@ -15,8 +15,9 @@ body{
 }
       
 #background{
+  font-size: 1.4em;
   color: white;
-  font-family: sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;
   width: 70%;
   height: 1000px;
   opacity = 1;
@@ -35,4 +36,9 @@ body{
 
 #buttons{
   float: right;
+}
+
+a{
+  color: #ffffff;
+  font-weight: bold;
 }
