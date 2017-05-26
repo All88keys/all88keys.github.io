@@ -24,14 +24,15 @@
     }
     
     var divbg = document.getElementById('background');
+	  divbg.style.opacity = 1;
 function toggleTransparency(){
-	var state1 = 1;
-  var state2 = .3;
-  if(divbg.style.opacity == state1){
-  	divbg.style.opacity = state2;
-  }else{
-  	divbg.style.opacity =state1;
-  }
+  	var state1 = 1;
+  	var state2 = .3;
+ 	if(divbg.style.opacity == state1){
+ 	 	divbg.style.opacity = state2;
+ 	}else{
+	  	divbg.style.opacity =state1;
+	}
 }
   </script>
 </html>
