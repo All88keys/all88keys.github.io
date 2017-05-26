@@ -4,14 +4,6 @@
     <title>Chris Vassallo</title>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
-    <script>    
-    function toggleTransparency(){
-      var opacity = document.getElementById('background').style.opacity;
-      if(opacity =='1') {opacity ='.3;'}
-      else {opacity= '1';}
-    }
-  </script>
-  
   <body>
     <iframe id='bg' src='https://all88keys.github.io/stars/'></iframe>
     <div id='background'>
@@ -30,5 +22,16 @@
       if(Math.random()<.5){ return ie;}
       else{ return stars;}
     }
+    
+    var divbg = document.getElementById('background');
+function toggleTransparency(){
+	var state1 = 1;
+  var state2 = .3;
+  if(divbg.style.opacity == state1){
+  	divbg.style.opacity = state2;
+  }else{
+  	divbg.style.opacity =state1;
+  }
+}
   </script>
 </html>
