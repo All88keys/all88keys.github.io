@@ -9,7 +9,7 @@
     <iframe id='bg' src='https://all88keys.github.io/stars/'></iframe>
     <div id='background'>
       <h1>
-        My Webasite <button onclick='bg.src = stars'>Stars</button><button onclick='bg.src = ie'>IE Error</button>
+        My Webasite <div><button onclick='bg.src = stars'>Stars</button><button onclick='bg.src = ie'>IE Error</button><button onclick='toggleTransparency()'>Dim This Window</button></div>
       </h1>
     </div>
   </body>
@@ -17,5 +17,15 @@
     var stars = 'https://all88keys.github.io/stars/';
     var ie = 'https://all88keys.github.io/ie-error/';
     var bg = document.getElementById('bg');
+    var opacity = document.getElementById('background').style.opacity;
+    bg.src = function(){
+      if(Math.Random()<5){ return ie;}
+      else{ return stars;}
+    }
+    
+    toggleTransparency(){
+      if(opacity ==1) {opacity =.3;}
+      else {opacity 1;}
+    }
   </script>
 </html>
