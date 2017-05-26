@@ -24,7 +24,9 @@
     var stars = 'https://all88keys.github.io/stars/';
     var ie = 'https://all88keys.github.io/ie-error/';
     var bg = document.getElementById('bg');
-    bg.src = function(){
+    bg.src = changeBg();
+      
+    function changeBg(){
       if(Math.Random()<5){ return ie;}
       else{ return stars;}
     }
