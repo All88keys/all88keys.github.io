@@ -17,6 +17,7 @@
 	    </h2>
 	    <div id='projects'>
 		    <ul>
+          <li><a href="https://poobaloofa.github.io/Platformer">Platformer</a> A <i>very</i> basic 2d platformer engine collaboration with <a href='https://github.com/Poobaloofa'>Poobaloofa</a></li>
 			    <li><a href="/stars"><strong>stars</strong></a> · A cool 3d star animation, with help from <a href='https://github.com/Poobaloofa'>Poobaloofa</a></li>
 			    <li><a href="/ie-error"><strong>ie error</strong></a> · Creates the infamous old ie error message, with a little more color</li>
 			    <li><a href="/graph"><strong>graph</strong></a> · Resizable graphing calculator made in vanilla js</li>
@@ -33,12 +34,12 @@
     var ie = 'https://all88keys.github.io/ie-error/';
     var bg = document.getElementById('bg');
     bg.src = changeBg();
-      
+
     function changeBg(){
       if(Math.random()<.5){ return ie;}
       else{ return stars;}
     }
-    
+
     var divbg = document.getElementById('background');
 	  divbg.style.opacity = 1;
 function toggleTransparency(){
