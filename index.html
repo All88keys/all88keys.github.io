@@ -32,12 +32,15 @@
   <script>
     var stars = 'https://all88keys.github.io/stars/';
     var ie = 'https://all88keys.github.io/ie-error/';
+    var snake = 'https://all88keys.github.io/snake/';
     var bg = document.getElementById('bg');
     bg.src = changeBg();
 
     function changeBg(){
-      if(Math.random()<.5){ return ie;}
-      else{ return stars;}
+      var temp = Math.random();
+      if(temp<.3){ return ie;}
+      else if(temp >=.3 && <.6){ return stars;}
+      else{return snake;}
     }
 
     var divbg = document.getElementById('background');
