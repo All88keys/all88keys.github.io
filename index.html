@@ -49,8 +49,9 @@
 
     function changeBg(){
       var temp = Math.random();
-      if(temp<.3){ return ie;}
-      else if(temp >=.3 && temp <.6){ return stars;}
+      if(temp<.25){ return ie;}
+      else if(temp >=.25 && temp <.5){ return stars;}
+      else if(temp >=.5 && temp <.75){ return snow;}
       else{return snake;}
     }
 
